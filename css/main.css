@@ -24,31 +24,28 @@ nav ul li, footer ul li { display: inline; margin-right: 20px; }
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
 header { border-bottom: 1px solid #d5d5d5; font-size: .8em;}
 
-.pic-div .blurb {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    box-sizing: border-box;
-    display: block;
-}
-
-.pic-div {
-  float: left;
-  width: 33.33333%
-}
-
-.blurb {
-  float: right;
-  width: 66.66666%
-}
-
 .face-img {
     border-radius: 50%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 320px auto;
+  padding: 20px;
+}
+
+.face-img {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 32;
+  border: 2px solid black;
 }
 
 /* CV */
