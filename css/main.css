@@ -1,17 +1,31 @@
-body { margin: 60px auto; width: 70%; }
+/* Common tags */
+body {
+  margin: 60px auto;
+  width: 70%;
+  background-color: #f8f8f5;
+}
 
-a { text-decoration: none; color: #999; }
+a { text-decoration: none; color: Sienna; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
+p, ul {
+  font-family: 'Merriweather', 'Georgia', 'Times';
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+}
 
 h1, h2, h3, h4 { font-family: 'Merriweather', 'Georgia', 'Times'; }
-h1 { font-size: 2em;  }
-h2 { font-size: 1.9em; }
-h3 { font-size: 1.8em; }
-h4 { font-size: 1.7em; }
 
-nav ul, footer ul {
+/* Up top */
+header {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #d5d5d5;
+  font-size: .8em;
+}
+
+nav ul {
   font-size: 1em;
   font-family: 'Montserrat','Helvetica', 'Sans-Serif';
   padding: 0px;
@@ -19,19 +33,20 @@ nav ul, footer ul {
   text-transform: uppercase;
   font-weight: normal;
 }
-nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
-footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
-header { border-bottom: 1px solid #d5d5d5; font-size: .8em;}
-
-.face-img {
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+nav ul li {
+  float: right;
+  display: inline;
+  margin-right: 20px;
 }
 
+.home {
+  float:left;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* Home page */
 .grid-container {
   display: grid;
   grid-template-columns: 320px auto;
@@ -39,16 +54,19 @@ header { border-bottom: 1px solid #d5d5d5; font-size: .8em;}
 }
 
 .face-img {
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
   display: block;
   margin-top: 20px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   top: 32;
-  border: 2px solid black;
+  border: 2px solid Sienna;
 }
 
 /* CV */
-.cv { margin: 0px 0px 60px; }
-.cv .download { font-family: 'Montserrat', 'Helvetica', 'Sans-Serif'; }
-.cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+.cv { margin: 30px 0px 60px; }
